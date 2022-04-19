@@ -9,10 +9,6 @@
   letter-spacing: 0.1rem;
 }
 
-*:hover {
-  outline: 0.1rem solid red;
-}
-
 html {
   font-size: 10px;
 }
@@ -54,6 +50,8 @@ body {
   height: 40rem;
   overflow-y: auto;
   text-align: justify;
+  cursor: pointer;
+  user-select: none;
 }
 
 input {
@@ -62,11 +60,24 @@ input {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  opacity: 0.5;
+  opacity: 0;
 }
 
 .stats {
   margin-top: 2rem;
   display: flex;
   justify-content: space-around;
+}
+
+/* class list */
+.text-field-clicked {
+  border: 0.2rem solid rgb(61, 193, 61);
+}
+
+.color {
+  border-bottom: 2px solid lightgreen;
+}
+
+.red-color {
+  border-bottom: 2px solid tomato;
 }
